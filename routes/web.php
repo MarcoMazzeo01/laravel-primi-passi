@@ -15,9 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $user = 'World';
+    $myself = 'Marco';
 
 
-    return view('home', [
-        'user' => $user,
-    ]);
+    // return view('home', [
+    //     'user' => $user,
+    // ]);
+
+    return view('home', compact('user', 'myself'));
 });

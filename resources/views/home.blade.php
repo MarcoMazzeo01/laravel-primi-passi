@@ -11,6 +11,7 @@
 <body>
     <div class="container">
         <h1>Hello {{ $user }}</h1>
+        <h2>Hi {{$myself}}</h2>
     </div>
 </body>
 
